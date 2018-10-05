@@ -8,14 +8,15 @@ var app = require('../app');
 var debug = require('debug')('offeringsservice:server');
 var http = require('http');
 
-var {
-  "port": serverPort
-} = require('../config.json');
+const {
+  port: serverPort
+} = require("../config.json");
+
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || serverPort);
+var port = normalizePort(serverPort);
 app.set('port', port);
 
 /**
