@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  offeringsservice-svc
+  labels:
+    app: offeringsservice
+spec:
+  selector:
+    app:  offeringsservice
+  type: NodePort
+  ports:
+   - port:  3003
+     nodePort: 30004
+     protocol: TCP
