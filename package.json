@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "serve": "NODE_ENV=PRO node ./bin/www",
     "test": "echo \"NO TEST SPECIFIED\""
   },
   "dependencies": {
