@@ -7,7 +7,7 @@ module.exports = {
                 cardType: 'LLOYDS BANK SAVINGS ACCOUNT',
                 cardTitle: 'LBG - Club Llyods Saver Account',
                 aer: '0.6',
-                savingsOnBestMatch: '4,828.80'
+                savingsOnOffering: 5
             }
         },
         {   
@@ -17,7 +17,7 @@ module.exports = {
                 cardType: 'LLOYDS BANK PLATINUM CREDIT CARD',
                 cardTitle: '0% Purchase and Balance transfer',
                 apr: '19.9',
-                savingsOnBestMatch: '258',
+                savingsOnOffering: 7,
                 introductoryTerm: '20M',
                 transferFee: 0,
                 afterIntroductoryMonthlySavings: 13 
