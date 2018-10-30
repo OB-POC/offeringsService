@@ -5,7 +5,7 @@ module.exports = {
             cardData : {
                 typeLeftOut: 'debit',
                 cardType: 'LLOYDS BANK SAVINGS ACCOUNT',
-                cardTitle: 'LBG - Club Llyods Saver Account',
+                cardTitle: 'LBG - Club Lloyds Saver Account',
                 aer: '0.6',
                 savingsOnOffering: 5
             }
