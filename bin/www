@@ -8,15 +8,11 @@ var app = require('../app');
 var debug = require('debug')('offeringsservice:server');
 var http = require('http');
 
-const {
-  port: serverPort
-} = require("../config.json");
-
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(serverPort);
+var port = 3003;
 app.set('port', port);
 
 /**
