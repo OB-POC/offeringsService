@@ -31,4 +31,25 @@ router.get('/cardDetails', (req, res) => {
   });
 });
 
+router.get('/advisory', (req, res) => {
+  var token = req.headers['x-access-token'];
+  jwt.verify(token, secret, (err, decodedObj) => {
+    if (err) {
+      res.status(500).json({ auth: false, message: 'Failed to authenticate token.' });
+    }
+    var userName = decodedObj.username;
+
+    request
+      .get(`${serviceUrls.dbUrl}/${userName}-advisory`, (err, response, body) => {
+          if(err) {
+              res.status(500).json({
+                  errorMsg: 'Failed to load the available offers'
+              }); 
+          }
+          let advisory = JSON.parse(body);
+          res.status(200).json(advisory);
+    });
+  });
+});
+
 module.exports = router;
